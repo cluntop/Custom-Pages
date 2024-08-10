@@ -19,6 +19,7 @@
         <p class="sub-header"><h1>请稍后再尝试访问</h1></p>
         <p class="sub-header"><h1>如有疑问请联系管理员反馈</h1></p>
         <br><br>
+        <div class="tip-text">
           ::CLOUDFLARE_ERROR_1000S_BOX::
         <div class="sub-footer">
           <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
@@ -34,37 +35,5 @@
     <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2 anime-background">
     </div>
   </div>
-  <script>
-    var now = new Date();
-    var hour = now.getHours();
-    console.log(hour)
-    if(hour<5 || hour>19){
-        document.write("<style>body{\n" +
-            "    background-color: rgba(0, 0, 0, 0.842);\n" +
-            "    color: white!important;\n" +
-            "}\n" +
-            ".oops{\n" +
-            "    color: white!important;\n" +
-            "\n" +
-            "}\n" +
-            ".sub-footer ul li{\n" +
-            "    color: white!important\n" +
-            "}</style>");
-    }else {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.write("<style>body{\n" +
-                "    background-color: rgba(0, 0, 0, 0.842);\n" +
-                "    color: white!important;\n" +
-                "}\n" +
-                ".oops{\n" +
-                "    color: white!important;\n" +
-                "\n" +
-                "}\n" +
-                ".sub-footer ul li{\n" +
-                "    color: white!important\n" +
-                "}</style>");
-        }
-    }
-</script>
 </body>
 </html>
